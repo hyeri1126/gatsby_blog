@@ -32,7 +32,7 @@ try {
 
 if (
     process.env.NODE_ENV === `production` &&
-    config.siteUrl === `http://localhost:8000` &&
+    config.siteUrl === `https://hyeri1126.github.io/gatsby_blog/` &&
     !process.env.SITEURL
 ) {
     throw new Error(
@@ -48,9 +48,9 @@ if (
  *
  */
 module.exports = {
-    siteMetadata: {
-       
-    },
+    siteMetadata : {
+        siteUrl: 'https://hyeri1126.github.io/gatsby_blog/'
+    },   
     trailingSlash: 'always',
     plugins: [
         /**
